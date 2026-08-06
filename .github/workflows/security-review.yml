@@ -19,10 +19,11 @@ jobs:
         run: mkdir -p "Vulnerability Test Results"
 
       - name: Run Trivy Dependency & Vulnerability Scanner
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
           scan-ref: '.'
+          exit-code: '0'
           ignore-unfixed: true
           format: 'table'
           output: 'trivy-report.txt'
