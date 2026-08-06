@@ -41,7 +41,7 @@ dependencies:
   shared_preferences: ^2.2.3
 
   # Bank SMS auto-read (Android only — no SMS inbox API exists on iOS)
-  telephony: ^0.2.0
+  another_telephony: ^0.4.1
 
   # PDF & Excel export
   pdf: ^3.11.0

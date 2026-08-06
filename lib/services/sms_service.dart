@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import 'package:telephony/telephony.dart';
+import 'package:another_telephony/telephony.dart';
 import '../utils/bank_sms_parser.dart';
 
 /// Reads and listens to device SMS on Android to auto-detect bank
