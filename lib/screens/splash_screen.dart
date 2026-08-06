@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:provider/provider.dart';
-import '../services/settings_service.dart';
 import 'login_screen.dart';
 import 'dashboard_screen.dart';
 
@@ -19,10 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void _redirect() {
+    if (!mounted) return;
     final user = FirebaseAuth.instance.currentUser;
-    if (user != null) {
-      context.read<SettingsService>().listen();
-    }
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (_) => user != null ? const DashboardScreen() : const LoginScreen(),

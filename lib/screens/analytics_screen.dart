@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../services/firestore_service.dart';
+import '../services/api_service.dart';
+import '../services/auth_service.dart';
 import '../models/expense.dart';
-import 'analytics_engine.dart';
 
 class AnalyticsScreen extends StatefulWidget {
   final bool embedded;
@@ -13,37 +14,33 @@ class AnalyticsScreen extends StatefulWidget {
 }
 
 class _AnalyticsScreenState extends State<AnalyticsScreen> {
-  Map<String, double>? _forecast;
-  List<AnomalyResult>? _anomalies;
-  ({double monthlySavings, double yearlySavings})? _whatIfResult;
+  Map<String, dynamic>? _forecast;
+  List<dynamic>? _anomalies;
+  Map<String, dynamic>? _whatIfResult;
   String _simCategory = 'Food';
   double _simReduction = 20;
 
-  // Current month's spend per category, kept in sync from the StreamBuilder
-  // below so the what-if simulator has real numbers to work with.
-  Map<String, double> _currentMonthByCategory = {};
-
   final categories = ['Food', 'Travel', 'Shopping', 'Bills', 'Entertainment', 'Health', 'Education', 'Other'];
 
-  /// Pulls a wider window of history (several months) once, then runs
-  /// forecasting and anomaly detection entirely on-device — no server call.
   Future<void> _loadAiInsights() async {
-    final fs = context.read<FirestoreService>();
-    final history = await fs.streamExpenses(limit: 500).first;
-    setState(() {
-      _forecast = AnalyticsEngine.forecastNextMonth(history);
-      _anomalies = AnalyticsEngine.detectAnomalies(history);
-    });
+    final api = ApiService(context.read<AuthService>());
+    try {
+      final f = await api.getForecast();
+      final a = await api.detectAnomalies();
+      setState(() { _forecast = f; _anomalies = a; });
+    } catch (_) {
+      // Backend might not be running; fail silently in the UI, show charts only.
+    }
   }
 
-  void _runWhatIf() {
-    final total = _currentMonthByCategory[_simCategory] ?? 0.0;
-    setState(() {
-      _whatIfResult = AnalyticsEngine.whatIf(
-        currentMonthCategoryTotal: total,
-        reductionPercent: _simReduction,
-      );
-    });
+  Future<void> _runWhatIf() async {
+    final api = ApiService(context.read<AuthService>());
+    try {
+      final result = await api.whatIfSimulation(category: _simCategory, reductionPercent: _simReduction);
+      setState(() => _whatIfResult = result);
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Simulation needs backend running: $e')));
+    }
   }
 
   @override
@@ -68,14 +65,6 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
             byCategory[e.category] = (byCategory[e.category] ?? 0) + e.amount;
           }
           final total = byCategory.values.fold(0.0, (s, v) => s + v);
-
-          // Keep the what-if simulator's data current without triggering a
-          // rebuild loop (only setState when the totals actually change).
-          if (!_mapsEqual(_currentMonthByCategory, byCategory)) {
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              if (mounted) setState(() => _currentMonthByCategory = byCategory);
-            });
-          }
 
           return ListView(
             children: [
@@ -107,17 +96,17 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 const Text('⚠ Anomaly Alerts', style: TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 ..._anomalies!.map((a) => Card(
-                  color: Colors.red.shade50,
-                  child: ListTile(
-                    leading: const Icon(Icons.warning_amber_rounded, color: Colors.red),
-                    title: Text('₹${a.amount.toStringAsFixed(0)} on ${a.category}'),
-                    subtitle: Text('Unusual: ~${a.deviation}x your average for this category'),
-                  ),
-                )),
+                      color: Colors.red.shade50,
+                      child: ListTile(
+                        leading: const Icon(Icons.warning_amber_rounded, color: Colors.red),
+                        title: Text('₹${a['amount']} on ${a['category']}'),
+                        subtitle: Text('Unusual: ~${a['deviation']}x your average for this category'),
+                      ),
+                    )),
                 const SizedBox(height: 16),
               ],
 
-              if (_forecast != null && _forecast!.isNotEmpty) ...[
+              if (_forecast != null) ...[
                 const Text('📈 Next Month Forecast', style: TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 Card(
@@ -125,27 +114,20 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: _forecast!.entries
+                      children: (_forecast!['categories'] as Map<String, dynamic>? ?? {})
+                          .entries
                           .map((e) => Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 4),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [Text(e.key), Text('₹${e.value.toStringAsFixed(0)}')],
-                        ),
-                      ))
+                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [Text(e.key), Text('₹${(e.value as num).toStringAsFixed(0)}')],
+                                ),
+                              ))
                           .toList(),
                     ),
                   ),
                 ),
                 const SizedBox(height: 24),
-              ] else if (_forecast != null) ...[
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Text(
-                    'Add a couple of months of expenses to unlock next-month forecasts.',
-                    style: TextStyle(color: Colors.grey, fontSize: 12),
-                  ),
-                ),
               ],
 
               // ---------- Location-aware insights ----------
@@ -241,7 +223,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                               padding: const EdgeInsets.only(top: 8),
                               child: Text(
                                 '💡 You tend to spend more when feeling ${entries.first.key.toLowerCase()} '
-                                    '— worth watching for impulse purchases.',
+                                '— worth watching for impulse purchases.',
                                 style: const TextStyle(fontSize: 12, color: Colors.orange, fontStyle: FontStyle.italic),
                               ),
                             ),
@@ -277,9 +259,9 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                       ElevatedButton(onPressed: _runWhatIf, child: const Text('Simulate Savings')),
                       if (_whatIfResult != null) ...[
                         const SizedBox(height: 12),
-                        Text('Projected monthly savings: ₹${_whatIfResult!.monthlySavings.toStringAsFixed(0)}',
+                        Text('Projected monthly savings: ₹${_whatIfResult!['monthlySavings']}',
                             style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
-                        Text('Projected yearly savings: ₹${_whatIfResult!.yearlySavings.toStringAsFixed(0)}',
+                        Text('Projected yearly savings: ₹${_whatIfResult!['yearlySavings']}',
                             style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
                       ],
                     ],
@@ -291,13 +273,5 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         },
       ),
     );
-  }
-
-  bool _mapsEqual(Map<String, double> a, Map<String, double> b) {
-    if (a.length != b.length) return false;
-    for (final key in a.keys) {
-      if (a[key] != b[key]) return false;
-    }
-    return true;
   }
 }

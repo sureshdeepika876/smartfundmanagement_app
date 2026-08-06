@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:http/http.dart' as http;
+import 'package:image_picker/image_picker.dart';
 import 'auth_service.dart';
 
 /// Talks to our Node.js + Express backend which handles
@@ -34,12 +34,23 @@ class ApiService {
   }
 
   /// Uploads a receipt image for OCR extraction (amount, merchant, date).
-  Future<Map<String, dynamic>> scanReceipt(File imageFile) async {
+  ///
+  /// Takes an [XFile] (from image_picker) rather than dart:io's [File]
+  /// because XFile works across mobile, desktop, AND web — File does not
+  /// exist on web. We read the bytes directly instead of using
+  /// MultipartFile.fromPath, since XFile.path isn't a real filesystem
+  /// path on web (it's a blob URL).
+  Future<Map<String, dynamic>> scanReceipt(XFile imageFile) async {
     final uri = Uri.parse('$baseUrl/receipts/scan');
     final request = http.MultipartRequest('POST', uri);
     final token = await _authService.getIdToken();
     if (token != null) request.headers['Authorization'] = 'Bearer $token';
-    request.files.add(await http.MultipartFile.fromPath('receipt', imageFile.path));
+
+    final bytes = await imageFile.readAsBytes();
+    request.files.add(
+      http.MultipartFile.fromBytes('receipt', bytes, filename: imageFile.name),
+    );
+
     final streamed = await request.send();
     final res = await http.Response.fromStream(streamed);
     if (res.statusCode == 200) return jsonDecode(res.body);

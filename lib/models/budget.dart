@@ -47,7 +47,7 @@ class SavingsGoal {
   });
 
   double get progress =>
-      targetAmount == 0 ? 0 : (currentAmount / targetAmount).clamp(0, 1);
+      targetAmount == 0 ? 0 : (currentAmount / targetAmount).clamp(0, 1).toDouble();
 
   bool get isAchieved => currentAmount >= targetAmount;
 

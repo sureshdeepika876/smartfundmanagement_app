@@ -46,8 +46,7 @@ class AuthService extends ChangeNotifier {
     }
   }
 
-  /// Firebase ID token — not currently used (no backend), kept in case
-  /// you add server-side verification later.
+  /// Returns a Firebase ID token to authenticate requests to the Node.js backend.
   Future<String?> getIdToken() async {
     return await _auth.currentUser?.getIdToken();
   }

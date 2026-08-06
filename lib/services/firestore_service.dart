@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import '../models/expense.dart';
 import '../models/budget.dart';
-import '../models/group_split.dart';
 
 class FirestoreService extends ChangeNotifier {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
@@ -15,10 +14,6 @@ class FirestoreService extends ChangeNotifier {
       _db.collection('users').doc(_uid).collection('budgets');
   CollectionReference get _goals =>
       _db.collection('users').doc(_uid).collection('goals');
-  DocumentReference get _groupMembersDoc =>
-      _db.collection('users').doc(_uid).collection('groupSplit').doc('members');
-  CollectionReference get _groupExpenses =>
-      _db.collection('users').doc(_uid).collection('groupSplitExpenses');
 
   // ---------- EXPENSES ----------
   Future<void> addExpense(Expense expense) async {
@@ -88,48 +83,5 @@ class FirestoreService extends ChangeNotifier {
     return _goals.snapshots().map((snap) => snap.docs
         .map((d) => SavingsGoal.fromMap(d.id, d.data() as Map<String, dynamic>))
         .toList());
-  }
-
-  // ---------- GROUP EXPENSE SPLIT ----------
-  /// Real-time stream of group members. Previously this list only lived in
-  /// widget state and vanished the moment you left the screen (let alone
-  /// after an app reinstall).
-  Stream<List<String>> streamGroupMembers() {
-    return _groupMembersDoc.snapshots().map((snap) {
-      final data = snap.data() as Map<String, dynamic>?;
-      return List<String>.from(data?['members'] ?? []);
-    });
-  }
-
-  Future<void> setGroupMembers(List<String> members) async {
-    await _groupMembersDoc.set({'members': members});
-  }
-
-  Stream<List<GroupExpenseEntry>> streamGroupExpenses() {
-    return _groupExpenses.orderBy('createdAt', descending: true).snapshots().map(
-        (snap) => snap.docs
-            .map((d) => GroupExpenseEntry.fromMap(d.id, d.data() as Map<String, dynamic>))
-            .toList());
-  }
-
-  Future<void> addGroupExpense(GroupExpenseEntry expense) async {
-    await _groupExpenses.add(expense.toMap());
-  }
-
-  Future<void> deleteGroupExpensesByPayer(String payer) async {
-    final snap = await _groupExpenses.where('payer', isEqualTo: payer).get();
-    for (final doc in snap.docs) {
-      await doc.reference.delete();
-    }
-  }
-
-  /// Clears the whole group split session (e.g. after settling up and
-  /// starting a fresh trip/event).
-  Future<void> clearGroupSplit() async {
-    await _groupMembersDoc.delete();
-    final snap = await _groupExpenses.get();
-    for (final doc in snap.docs) {
-      await doc.reference.delete();
-    }
   }
 }

@@ -66,11 +66,11 @@ class DefaultFirebaseOptions {
   );
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyBTxb2IVfRq8n3Dl5UavyAFasnOXcrWnKI',
-    appId: '1:869939356915:ios:dd19a67defdc9d4d94c386',
+    appId: '1:869939356915:ios:304881996eb0d6a494c386',
     messagingSenderId: '869939356915',
     projectId: 'smartfund-management',
     storageBucket: 'smartfund-management.firebasestorage.app',
-    iosBundleId: 'com.example.smartfundmanagement',
+    iosBundleId: 'com.smartfund.app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

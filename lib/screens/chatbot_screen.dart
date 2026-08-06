@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../services/api_service.dart';
+import '../services/auth_service.dart';
 import '../services/firestore_service.dart';
-import 'analytics_engine.dart';
 
 class ChatMessage {
   final String text;
@@ -21,13 +22,20 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
   final List<ChatMessage> _messages = [
     ChatMessage(
         "Hi! I'm your SmartSpend assistant 🤖\nAsk me things like:\n"
-            "• \"How much did I spend on Food this month?\"\n"
-            "• \"Am I over budget?\"\n"
-            "• \"Give me a savings tip\"\n"
-            "• \"What's my forecast for next month?\"",
+        "• \"How much did I spend on Food this month?\"\n"
+        "• \"Am I over budget?\"\n"
+        "• \"Give me a savings tip\"\n"
+        "• \"What's my forecast for next month?\"",
         false),
   ];
   bool _thinking = false;
+
+  @override
+  void dispose() {
+    _inputCtrl.dispose();
+    _scrollCtrl.dispose();
+    super.dispose();
+  }
 
   Future<void> _send() async {
     final text = _inputCtrl.text.trim();
@@ -39,17 +47,23 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
     });
     _scrollToBottom();
 
-    // Fully on-device — queries Firestore directly, no backend involved.
-    final reply = await _answer(text);
-    setState(() {
-      _messages.add(ChatMessage(reply, false));
-      _thinking = false;
-    });
+    final api = ApiService(context.read<AuthService>());
+    try {
+      final reply = await api.askChatbot(text);
+      setState(() => _messages.add(ChatMessage(reply, false)));
+    } catch (e) {
+      // Local fallback so the chatbot still answers basic questions if the
+      // Node.js backend isn't running (common during a demo/viva).
+      final fallback = await _localFallbackAnswer(text);
+      setState(() => _messages.add(ChatMessage(fallback, false)));
+    }
+    setState(() => _thinking = false);
     _scrollToBottom();
   }
 
-  /// Simple rule-based answer using live Firestore data.
-  Future<String> _answer(String question) async {
+  /// Simple on-device rule-based answer using live Firestore data, used only
+  /// when the backend chatbot endpoint is unreachable.
+  Future<String> _localFallbackAnswer(String question) async {
     final fs = context.read<FirestoreService>();
     final now = DateTime.now();
     final expenses = await fs.streamExpensesForMonth(now.month, now.year).first;
@@ -71,49 +85,19 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
       return "Your current month balance is ₹${(totalIncome - totalExpense).toStringAsFixed(2)} "
           "(Income ₹${totalIncome.toStringAsFixed(0)} − Expense ₹${totalExpense.toStringAsFixed(0)}).";
     }
-
     if (lower.contains('budget') || lower.contains('over')) {
-      final budgets = await fs.streamBudgets(now.month, now.year).first;
-      if (budgets.isEmpty) {
-        return "You haven't set a budget for this month yet — head to the Budget tab to set one, "
-            "so far you've spent ₹${totalExpense.toStringAsFixed(2)}.";
-      }
-      final byCategory = <String, double>{};
-      for (final e in expenses.where((e) => e.type == 'expense')) {
-        byCategory[e.category] = (byCategory[e.category] ?? 0) + e.amount;
-      }
-      final overBudget = budgets.where((b) {
-        final spent = b.category == 'Overall' ? totalExpense : (byCategory[b.category] ?? 0);
-        return spent > b.limit;
-      }).toList();
-      if (overBudget.isEmpty) {
-        return "You're within budget on everything so far this month. Nice work! 👍";
-      }
-      final lines = overBudget.map((b) {
-        final spent = b.category == 'Overall' ? totalExpense : (byCategory[b.category] ?? 0);
-        return "${b.category}: ₹${spent.toStringAsFixed(0)} of ₹${b.limit.toStringAsFixed(0)}";
-      }).join('\n');
-      return "You're over budget on:\n$lines";
+      return "I couldn't reach the backend to check your live budget status. "
+          "(Start the Node.js server for real-time budget alerts.) "
+          "Meanwhile, your total spend this month is ₹${totalExpense.toStringAsFixed(2)}.";
     }
-
     if (lower.contains('tip') || lower.contains('advice') || lower.contains('save')) {
       return "💡 Tip: Try the 50/30/20 rule — 50% needs, 30% wants, 20% savings. "
           "Check the Analytics tab's \"What-If\" simulator to see how cutting a category by "
           "even 10-20% adds up over a year.";
     }
-
     if (lower.contains('forecast') || lower.contains('predict') || lower.contains('next month')) {
-      final history = await fs.streamExpenses(limit: 500).first;
-      final forecast = AnalyticsEngine.forecastNextMonth(history);
-      if (forecast.isEmpty) {
-        return "I need at least a month of past spending to forecast next month — keep logging expenses "
-            "and check back, or see live projections any time in the Analytics tab.";
-      }
-      final total = forecast.values.fold(0.0, (s, v) => s + v);
-      final top = forecast.entries.toList()..sort((a, b) => b.value.compareTo(a.value));
-      final topLine = top.take(3).map((e) => '${e.key}: ₹${e.value.toStringAsFixed(0)}').join(', ');
-      return "Based on your recent spending trend, next month's forecast is about ₹${total.toStringAsFixed(0)} total. "
-          "Biggest categories: $topLine. Full breakdown is in the Analytics tab.";
+      return "For an accurate AI forecast based on your spending trend, please make sure "
+          "the backend server is running — check the Analytics tab for the live forecast.";
     }
 
     return "I'm not sure about that one yet. Try asking about a specific category "

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../services/api_service.dart';
+import '../services/auth_service.dart';
 import '../utils/settlement_optimizer.dart';
 
 class _GroupExpenseEntry {
@@ -23,6 +26,12 @@ class _GroupSplitScreenState extends State<GroupSplitScreen> {
   final _memberCtrl = TextEditingController();
   List<Transaction>? _settlement;
   bool _computing = false;
+
+  @override
+  void dispose() {
+    _memberCtrl.dispose();
+    super.dispose();
+  }
 
   void _addMember() {
     final name = _memberCtrl.text.trim();
@@ -110,8 +119,19 @@ class _GroupSplitScreenState extends State<GroupSplitScreen> {
   Future<void> _settleUp() async {
     setState(() => _computing = true);
     final balances = _computeNetBalances();
-    // Runs entirely on-device — same min-cash-flow algorithm, no server needed.
-    setState(() => _settlement = SettlementOptimizer.optimize(balances));
+    try {
+      // Try backend for consistency with server-side algorithm (same logic,
+      // but demonstrates the full-stack integration).
+      final api = ApiService(context.read<AuthService>());
+      final result = await api.optimizeSettlement(balances);
+      final txns = (result['transactions'] as List)
+          .map((t) => Transaction(t['from'], t['to'], (t['amount'] as num).toDouble()))
+          .toList();
+      setState(() => _settlement = txns);
+    } catch (_) {
+      // Backend unreachable — use the identical algorithm on-device.
+      setState(() => _settlement = SettlementOptimizer.optimize(balances));
+    }
     setState(() => _computing = false);
   }
 
@@ -142,13 +162,13 @@ class _GroupSplitScreenState extends State<GroupSplitScreen> {
             spacing: 8,
             children: _members
                 .map((m) => Chip(
-              label: Text(m),
-              onDeleted: () => setState(() {
-                _members.remove(m);
-                _expenses.removeWhere((e) => e.payer == m);
-                _settlement = null;
-              }),
-            ))
+                      label: Text(m),
+                      onDeleted: () => setState(() {
+                        _members.remove(m);
+                        _expenses.removeWhere((e) => e.payer == m);
+                        _settlement = null;
+                      }),
+                    ))
                 .toList(),
           ),
           const Divider(height: 32),
@@ -164,11 +184,11 @@ class _GroupSplitScreenState extends State<GroupSplitScreen> {
             const Padding(padding: EdgeInsets.all(8), child: Text('No expenses added yet.'))
           else
             ..._expenses.map((e) => ListTile(
-              leading: const Icon(Icons.receipt_long_outlined),
-              title: Text(e.description),
-              subtitle: Text('Paid by ${e.payer}'),
-              trailing: Text('₹${e.amount.toStringAsFixed(2)}'),
-            )),
+                  leading: const Icon(Icons.receipt_long_outlined),
+                  title: Text(e.description),
+                  subtitle: Text('Paid by ${e.payer}'),
+                  trailing: Text('₹${e.amount.toStringAsFixed(2)}'),
+                )),
           if (_expenses.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 8),
@@ -196,14 +216,14 @@ class _GroupSplitScreenState extends State<GroupSplitScreen> {
               const Text('Everyone is already settled up! 🎉')
             else
               ..._settlement!.map((t) => Card(
-                color: Colors.teal.shade50,
-                child: ListTile(
-                  leading: const Icon(Icons.arrow_forward, color: Colors.teal),
-                  title: Text('${t.from} → ${t.to}'),
-                  trailing: Text('₹${t.amount.toStringAsFixed(2)}',
-                      style: const TextStyle(fontWeight: FontWeight.bold)),
-                ),
-              )),
+                    color: Colors.teal.shade50,
+                    child: ListTile(
+                      leading: const Icon(Icons.arrow_forward, color: Colors.teal),
+                      title: Text('${t.from} → ${t.to}'),
+                      trailing: Text('₹${t.amount.toStringAsFixed(2)}',
+                          style: const TextStyle(fontWeight: FontWeight.bold)),
+                    ),
+                  )),
             const SizedBox(height: 8),
             Text('${_settlement!.length} transaction(s) needed to settle the whole group.',
                 style: const TextStyle(color: Colors.grey, fontSize: 12)),
