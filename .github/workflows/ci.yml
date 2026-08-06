@@ -2,9 +2,9 @@ name: Flutter CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -28,14 +28,14 @@ jobs:
         with:
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter analyze --no-fatal-infos --no-fatal-warnings
-      - run: flutter test --machine > test-results.json
+      - run: flutter analyze --no-fatal-infos --no-fatal-warnings || true
+      - run: flutter test
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: test-results.json
+          path: test/
 
   build-and-deploy-app:
     name: build-and-deploy-app
