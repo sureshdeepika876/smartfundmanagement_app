@@ -1,0 +1,785 @@
+<html>
+<head>
+<title>TestNG:  Appium & Selenium E2E Automation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Appium & Selenium E2E Automation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>141/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 06 11:49:59 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (399 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg013()'><b>testReg013</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_013: Verify registration SQL injection input handling<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz021()'><b>testAuthz021</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_021: Verify expired auth token rejection 401<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav007()'><b>testNav007</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_007: Verify settings tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf003()'><b>testProf003</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_003: Verify profile picture size limit<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testValidOtpAuthentication()'><b>testValidOtpAuthentication</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_011: Verify valid OTP authentication<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg012()'><b>testReg012</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_012: Verify registration full name length limit<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testCaseInsensitiveEmail()'><b>testCaseInsensitiveEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_028: Verify case insensitivity in email input<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testTwoFactorTrigger()'><b>testTwoFactorTrigger</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_010: Verify OTP trigger for 2FA login<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf009()'><b>testProf009</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_009: Verify dark mode theme preference update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testPasswordMasking()'><b>testPasswordMasking</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_006: Verify password masking in login screen<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav006()'><b>testNav006</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_006: Verify chatbot tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz025()'><b>testAuthz025</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_025: Verify IDOR prevention expense deletion<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf018()'><b>testProf018</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_018: Verify bio text field character limit<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testJwtSignatureValidation()'><b>testJwtSignatureValidation</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_034: Verify JWT token signature validation on login<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz013()'><b>testAuthz013</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_013: Verify finance auditor read transaction history<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav002()'><b>testNav002</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_002: Verify analytics tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testXssInEmail()'><b>testXssInEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_026: Verify XSS script injection in login email field<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz007()'><b>testAuthz007</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_007: Verify token revocation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testNotificationsSuite()'><b>testNotificationsSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_NOTIF_001 to TC_NOTIF_020: Execute notifications suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav009()'><b>testNav009</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_009: Verify drawer menu opening<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf016()'><b>testProf016</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_016: Verify delete account confirmation dialog<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testLoginButtonProcessingState()'><b>testLoginButtonProcessingState</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_029: Verify login button state while processing API request<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz030()'><b>testAuthz030</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_030: Verify audit trail log on authorization failure<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg010()'><b>testReg010</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_010: Verify registration rate limiting per IP<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testFormsFull()'><b>testFormsFull</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_FORM_001 to TC_FORM_040: Execute expense entry forms and input validation suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz026()'><b>testAuthz026</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_026: Verify IDOR prevention group split modify<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz027()'><b>testAuthz027</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_027: Verify admin privilege downgrade notification<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testBiometricFaceUnlock()'><b>testBiometricFaceUnlock</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_021: Verify biometric face unlock login<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg020()'><b>testReg020</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_020: Verify automatic login post successful registration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg015()'><b>testReg015</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_015: Verify Google signup integration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz023()'><b>testAuthz023</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_023: Verify unsigned JWT token rejection<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav004()'><b>testNav004</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_004: Verify goals tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testOfflineHandlingSuite()'><b>testOfflineHandlingSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_OFF_001 to TC_OFF_010: Execute offline handling suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testResendOtp()'><b>testResendOtp</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_012: Verify resend OTP functionality<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testAccessibilitySuite()'><b>testAccessibilitySuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_ACC_001 to TC_ACC_020: Execute accessibility suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testResetWeakPassword()'><b>testResetWeakPassword</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_017: Verify password reset with weak password<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg008()'><b>testReg008</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_008: Verify registration phone number validation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf001()'><b>testProf001</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_001: Verify profile info update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testErrorHandlingSuite()'><b>testErrorHandlingSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_ERR_001 to TC_ERR_020: Execute error handling suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg003()'><b>testReg003</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_003: Verify registration email format validation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz008()'><b>testAuthz008</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_008: Verify multi tenant workspace isolation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf010()'><b>testProf010</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_010: Verify notification preference settings update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg006()'><b>testReg006</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_006: Verify registration terms & conditions checkbox req<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testSslPinningFailure()'><b>testSslPinningFailure</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_039: Verify SSL pinning failure during login API call<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDash002()'><b>testDash002</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_002: Verify total monthly income card rendering<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testAccountLockout()'><b>testAccountLockout</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_014: Verify account lockout after 5 failed attempts<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz029()'><b>testAuthz029</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_029: Verify role assignment API requires Super Admin<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav008()'><b>testNav008</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_008: Verify back button hardware navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg005()'><b>testReg005</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_005: Verify confirm password mismatch error<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg017()'><b>testReg017</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_017: Verify initial default user settings created<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf005()'><b>testProf005</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_005: Verify phone number update verification<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg001()'><b>testReg001</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_001: Verify new user registration valid details<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testChangePasswordPreventReuse()'><b>testChangePasswordPreventReuse</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_033: Verify change password prevents reusing last password<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testReAuthenticationAfterExpiry()'><b>testReAuthenticationAfterExpiry</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_040: Verify successful re-authentication after session expiry<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz003()'><b>testAuthz003</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_003: Verify RBAC role permission update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testConcurrentDeviceLogin()'><b>testConcurrentDeviceLogin</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_030: Verify concurrent login from multiple devices behavior<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz016()'><b>testAuthz016</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_016: Verify API token scope restriction<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testResponsiveUiSuite()'><b>testResponsiveUiSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_RESP_001 to TC_RESP_010: Execute responsive UI suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDash004()'><b>testDash004</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_004: Verify recent transactions list rendering<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg019()'><b>testReg019</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_019: Verify onboarding walkthrough after registration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDashRest()'><b>testDashRest</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_006 to TC_DASH_020: Execute dashboard widget checks<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf017()'><b>testProf017</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_017: Verify delete account data purge<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testFiltersSuite()'><b>testFiltersSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_FLTR_001 to TC_FLTR_020: Execute filters suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf019()'><b>testProf019</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_019: Verify profile update success toast message<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_005: Verify login with empty password field<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz012()'><b>testAuthz012</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_012: Verify manager role budget approval permission<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz014()'><b>testAuthz014</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_014: Verify guest access restricted to onboarding<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDash001()'><b>testDash001</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_001: Verify total balance summary card rendering<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testExpiredOtp()'><b>testExpiredOtp</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_013: Verify expired OTP error handling<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testSessionManagementSuite()'><b>testSessionManagementSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_SESS_001 to TC_SESS_020: Execute session management suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg014()'><b>testReg014</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_014: Verify registration XSS sanitization<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDash005()'><b>testDash005</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_005: Verify dashboard pull to refresh gesture<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf007()'><b>testProf007</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_007: Verify default currency setting update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg016()'><b>testReg016</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_016: Verify Apple signup integration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testInputValidationSuite()'><b>testInputValidationSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_VAL_001 to TC_VAL_040: Execute input validation suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz017()'><b>testAuthz017</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_017: Verify cross tenant file access blocked<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf015()'><b>testProf015</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_015: Verify export personal data GDPR compliance<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf008()'><b>testProf008</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_008: Verify language preference setting update<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testUnregisteredEmail()'><b>testUnregisteredEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_003: Verify error message for unregistered email<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg018()'><b>testReg018</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_018: Verify initial default currency selection<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz022()'><b>testAuthz022</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_022: Verify tampered JWT token payload rejection 403<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testLoginNetworkTimeout()'><b>testLoginNetworkTimeout</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_038: Verify network timeout during login request<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf020()'><b>testProf020</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_020: Verify profile sync across multiple active devices<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz018()'><b>testAuthz018</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_018: Verify cross tenant database query blocked<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf011()'><b>testProf011</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_011: Verify 2FA security setting enable<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testValidLogin()'><b>testValidLogin</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_001: Verify successful login with valid credentials<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testForgotPasswordTrigger()'><b>testForgotPasswordTrigger</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_015: Verify forgot password email trigger<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz006()'><b>testAuthz006</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_006: Verify read-only user write denied<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testSqlInjectionInEmail()'><b>testSqlInjectionInEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_025: Verify SQL injection prevention in login email field<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg009()'><b>testReg009</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_009: Verify registration SMS OTP verification step<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg004()'><b>testReg004</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_004: Verify password complexity enforcement registration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testOAuthCodeExchange()'><b>testOAuthCodeExchange</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_035: Verify OAuth authorization code exchange<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testResetPasswordLink()'><b>testResetPasswordLink</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_016: Verify reset password link validation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testBiometricFingerprint()'><b>testBiometricFingerprint</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_020: Verify biometric fingerprint login<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz010()'><b>testAuthz010</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_010: Verify guest user redirect protected screens<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav005()'><b>testNav005</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_005: Verify group split tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testTrimWhitespaceEmail()'><b>testTrimWhitespaceEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_027: Verify trim leading/trailing whitespace in email<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testAppleLogin()'><b>testAppleLogin</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_019: Verify login with Apple ID<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testEmptyEmail()'><b>testEmptyEmail</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_004: Verify login with empty email field<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav001()'><b>testNav001</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_001: Verify home tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testPerformanceSmokeSuite()'><b>testPerformanceSmokeSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_PERF_001 to TC_PERF_020: Execute performance smoke suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testSuccessfulLogout()'><b>testSuccessfulLogout</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_008: Verify successful logout functionality<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav003()'><b>testNav003</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_003: Verify budget tab navigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz002()'><b>testAuthz002</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_002: Verify admin user access system management<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg002()'><b>testReg002</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_002: Verify error message existing email registration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNav010()'><b>testNav010</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_010: Verify drawer menu closing on swipe<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz015()'><b>testAuthz015</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_015: Verify OAuth scope enforcement<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf014()'><b>testProf014</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_014: Verify revoke active sessions from profile<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg007()'><b>testReg007</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_007: Verify account verification email sent<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testChangePasswordCurrentPasswordReq()'><b>testChangePasswordCurrentPasswordReq</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_032: Verify change password requires current password<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testCrudFull()'><b>testCrudFull</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_CRUD_001 to TC_CRUD_040: Execute Create, Read, Update, Delete transactions suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testNavRest()'><b>testNavRest</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_NAV_011 to TC_NAV_030: Execute navigation sub-flows<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf004()'><b>testProf004</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_004: Verify profile picture format JPEG PNG<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testAutoLogoutTokenExpiration()'><b>testAutoLogoutTokenExpiration</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_024: Verify auto-logout on token expiration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz024()'><b>testAuthz024</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_024: Verify algorithm none JWT attack mitigation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testPasswordResetLinkExpiry()'><b>testPasswordResetLinkExpiry</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_031: Verify password reset link expiration<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testFileUploadSuite()'><b>testFileUploadSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_FILE_001 to TC_FILE_020: Execute file upload suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz001()'><b>testAuthz001</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_001: Verify regular user cannot access admin panel<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf013()'><b>testProf013</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_013: Verify view account activity security logs<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testPasswordToggle()'><b>testPasswordToggle</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_007: Verify password toggle visibility button<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf012()'><b>testProf012</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_012: Verify 2FA security setting disable requiring password<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testLoginScreenDarkMode()'><b>testLoginScreenDarkMode</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_036: Verify login screen UI rendering in dark mode<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testBiometricFallbackPin()'><b>testBiometricFallbackPin</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_022: Verify biometric fallback to PIN<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testSearchSuite()'><b>testSearchSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_SRCH_001 to TC_SRCH_020: Execute search suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz020()'><b>testAuthz020</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_020: Verify authorization header Bearer scheme format<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_002: Verify error message for invalid password<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz009()'><b>testAuthz009</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_009: Verify privilege escalation blocked<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.SearchFilterValidationTests.testFullRegressionSuite()'><b>testFullRegressionSuite</b><br>Test class: com.smartfund.tests.SearchFilterValidationTests<br>Test method: TC_REGR_001 to TC_REGR_050: Execute full regression suite<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.SearchFilterValidationTests@64cd705f</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz028()'><b>testAuthz028</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_028: Verify permission matrix validation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf006()'><b>testProf006</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_006: Verify primary email change requires verification<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testReg011()'><b>testReg011</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_REG_011: Verify registration captcha bot protection<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testSessionPersistence()'><b>testSessionPersistence</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_023: Verify session persistence after app restart<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz019()'><b>testAuthz019</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_019: Verify session hijacking defense token rotation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testProf002()'><b>testProf002</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_PROF_002: Verify profile picture upload<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testLoginScreenAccessibilityLabels()'><b>testLoginScreenAccessibilityLabels</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_037: Verify login screen accessibility label reader<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.NavigationAndDashboardTests.testDash003()'><b>testDash003</b><br>Test class: com.smartfund.tests.NavigationAndDashboardTests<br>Test method: TC_DASH_003: Verify total monthly expense card rendering<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.NavigationAndDashboardTests@13e39c73</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testGoogleLogin()'><b>testGoogleLogin</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_018: Verify login with Google OAuth2<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz011()'><b>testAuthz011</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_011: Verify role permission cache invalidation<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthenticationTests.testRememberMe()'><b>testRememberMe</b><br>Test class: com.smartfund.tests.AuthenticationTests<br>Test method: TC_AUTH_009: Verify remember me checkbox functionality<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthenticationTests@e056f20</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz004()'><b>testAuthz004</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_004: Verify IDOR prevention user profile<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+<tr>
+<td title='com.smartfund.tests.AuthorizationAndProfileTests.testAuthz005()'><b>testAuthz005</b><br>Test class: com.smartfund.tests.AuthorizationAndProfileTests<br>Test method: TC_AUTHZ_005: Verify IDOR prevention transactions<br>Parameters: org.testng.TestRunner@1d0a3d74</td>
+<td></td>
+<td>0</td>
+<td>com.smartfund.tests.AuthorizationAndProfileTests@a9cd3b1</td></tr>
+</table><p>
+</body>
+</html>

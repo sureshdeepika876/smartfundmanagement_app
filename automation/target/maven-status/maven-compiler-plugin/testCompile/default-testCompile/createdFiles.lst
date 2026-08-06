@@ -1,0 +1,5 @@
+com/smartfund/tests/AuthorizationAndProfileTests.class
+com/smartfund/tests/NavigationAndDashboardTests.class
+com/smartfund/tests/BaseTest.class
+com/smartfund/tests/SearchFilterValidationTests.class
+com/smartfund/tests/AuthenticationTests.class

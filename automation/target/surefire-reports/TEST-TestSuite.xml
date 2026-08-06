@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="3.018" tests="141" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/test-classes:/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/classes:/Users/dhanushs/.m2/repository/io/appium/java-client/8.5.1/java-client-8.5.1.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.46.0/selenium-remote-driver-4.46.0.jar:/Users/dhanushs/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/dhanushs/.m2/repository/com/google/guava/guava/33.6.0-jre/guava-33.6.0-jre.jar:/Users/dhanushs/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/dhanushs/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dhanushs/.m2/repository/com/google/errorprone/error_prone_annotations/2.47.0/error_prone_annotations-2.47.0.jar:/Users/dhanushs/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-api/1.64.0/opentelemetry-api-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-context/1.64.0/opentelemetry-context-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-common/1.64.0/opentelemetry-common-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.64.0/opentelemetry-exporter-logging-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.64.0/opentelemetry-sdk-common-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.64.0/opentelemetry-sdk-extension-autoconfigure-spi-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.64.0/opentelemetry-sdk-extension-autoconfigure-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.64.0/opentelemetry-sdk-trace-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.64.0/opentelemetry-sdk-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.64.0/opentelemetry-sdk-metrics-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.64.0/opentelemetry-sdk-logs-1.64.0.jar:/Users/dhanushs/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/Users/dhanushs/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-http/4.46.0/selenium-http-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-json/4.46.0/selenium-json-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.46.0/selenium-manager-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-os/4.46.0/selenium-os-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-support/4.46.0/selenium-support-4.46.0.jar:/Users/dhanushs/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/dhanushs/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/dhanushs/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/dhanushs/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/dhanushs/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dhanushs/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-java/4.10.0/selenium-java-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.10.0/selenium-chrome-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dhanushs/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.10.0/selenium-chromium-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v112/4.10.0/selenium-devtools-v112-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.10.0/selenium-devtools-v113-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.10.0/selenium-devtools-v114-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.10.0/selenium-devtools-v85-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.10.0/selenium-edge-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.10.0/selenium-firefox-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.10.0/selenium-ie-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.10.0/selenium-safari-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0.jar:/Users/dhanushs/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/dhanushs/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dhanushs/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/Users/dhanushs/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dhanushs/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dhanushs/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/Users/dhanushs/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dhanushs/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/dhanushs/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/dhanushs/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar:/Users/dhanushs/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/surefire/surefirebooter-20260806114959086_3.jar /Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/surefire 2026-08-06T11-49-59_003-jvmRun1 surefire-20260806114959086_1tmp surefire_0-20260806114959086_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/test-classes:/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/classes:/Users/dhanushs/.m2/repository/io/appium/java-client/8.5.1/java-client-8.5.1.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.46.0/selenium-remote-driver-4.46.0.jar:/Users/dhanushs/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/dhanushs/.m2/repository/com/google/guava/guava/33.6.0-jre/guava-33.6.0-jre.jar:/Users/dhanushs/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/dhanushs/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dhanushs/.m2/repository/com/google/errorprone/error_prone_annotations/2.47.0/error_prone_annotations-2.47.0.jar:/Users/dhanushs/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-api/1.64.0/opentelemetry-api-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-context/1.64.0/opentelemetry-context-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-common/1.64.0/opentelemetry-common-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.64.0/opentelemetry-exporter-logging-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.64.0/opentelemetry-sdk-common-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.64.0/opentelemetry-sdk-extension-autoconfigure-spi-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.64.0/opentelemetry-sdk-extension-autoconfigure-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.64.0/opentelemetry-sdk-trace-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.64.0/opentelemetry-sdk-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.64.0/opentelemetry-sdk-metrics-1.64.0.jar:/Users/dhanushs/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.64.0/opentelemetry-sdk-logs-1.64.0.jar:/Users/dhanushs/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/Users/dhanushs/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-http/4.46.0/selenium-http-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-json/4.46.0/selenium-json-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.46.0/selenium-manager-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-os/4.46.0/selenium-os-4.46.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-support/4.46.0/selenium-support-4.46.0.jar:/Users/dhanushs/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/dhanushs/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/dhanushs/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/dhanushs/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/dhanushs/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dhanushs/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-java/4.10.0/selenium-java-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.10.0/selenium-chrome-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dhanushs/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.10.0/selenium-chromium-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v112/4.10.0/selenium-devtools-v112-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.10.0/selenium-devtools-v113-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.10.0/selenium-devtools-v114-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.10.0/selenium-devtools-v85-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.10.0/selenium-edge-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.10.0/selenium-firefox-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.10.0/selenium-ie-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.10.0/selenium-safari-driver-4.10.0.jar:/Users/dhanushs/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0.jar:/Users/dhanushs/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/dhanushs/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dhanushs/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/Users/dhanushs/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dhanushs/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dhanushs/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/Users/dhanushs/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/Users/dhanushs/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/Users/dhanushs/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dhanushs/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/Users/dhanushs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/dhanushs/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/dhanushs/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar:/Users/dhanushs/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/dhanushs"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation/target/surefire/surefirebooter-20260806114959086_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="dhanushs"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.5.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/dhanushs/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/kq/792ddnqd0zn770179n2813tw0000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/dhanushs/.gemini/antigravity/scratch/smartfundmanagement_app/automation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/dhanushs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testAccountLockout[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.002">
+    <system-out><![CDATA[Starting Enterprise E2E Test Suite...
+]]></system-out>
+  </testcase>
+  <testcase name="testAppleLogin[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.006"/>
+  <testcase name="testAutoLogoutTokenExpiration[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.866] [INFO] Completed: testAccountLockout | Status: PASSED
+[2026-08-06 11:49:59.866] [INFO] Completed: testAppleLogin | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testBiometricFaceUnlock[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0"/>
+  <testcase name="testBiometricFallbackPin[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.871] [INFO] Completed: testAutoLogoutTokenExpiration | Status: PASSED
+[2026-08-06 11:49:59.871] [INFO] Completed: testBiometricFaceUnlock | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testBiometricFingerprint[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0"/>
+  <testcase name="testChangePasswordCurrentPasswordReq[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.874] [INFO] Completed: testBiometricFallbackPin | Status: PASSED
+[2026-08-06 11:49:59.874] [INFO] Completed: testBiometricFingerprint | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testCaseInsensitiveEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0"/>
+  <testcase name="testChangePasswordPreventReuse[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.877] [INFO] Completed: testChangePasswordCurrentPasswordReq | Status: PASSED
+[2026-08-06 11:49:59.877] [INFO] Completed: testCaseInsensitiveEmail | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentDeviceLogin[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.880] [INFO] Completed: testChangePasswordPreventReuse | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyPassword[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.881] [INFO] Completed: testConcurrentDeviceLogin | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001"/>
+  <testcase name="testExpiredOtp[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.884] [INFO] Completed: testEmptyEmail | Status: PASSED
+[2026-08-06 11:49:59.884] [INFO] Completed: testEmptyPassword | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testForgotPasswordTrigger[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:49:59.887] [INFO] Completed: testExpiredOtp | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testGoogleLogin[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.888] [INFO] Completed: testForgotPasswordTrigger | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidPassword[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:49:59.890] [INFO] Completed: testGoogleLogin | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testJwtSignatureValidation[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.890] [INFO] Completed: testInvalidPassword | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginButtonProcessingState[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001"/>
+  <testcase name="testLoginNetworkTimeout[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.894] [INFO] Completed: testLoginButtonProcessingState | Status: PASSED
+[2026-08-06 11:49:59.894] [INFO] Completed: testJwtSignatureValidation | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginScreenAccessibilityLabels[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0"/>
+  <testcase name="testLoginScreenDarkMode[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.897] [INFO] Completed: testLoginNetworkTimeout | Status: PASSED
+[2026-08-06 11:49:59.897] [INFO] Completed: testLoginScreenAccessibilityLabels | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testOAuthCodeExchange[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0"/>
+  <testcase name="testPasswordMasking[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.900] [INFO] Completed: testLoginScreenDarkMode | Status: PASSED
+[2026-08-06 11:49:59.900] [INFO] Completed: testOAuthCodeExchange | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testPasswordResetLinkExpiry[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:49:59.904] [INFO] Completed: testPasswordMasking | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReAuthenticationAfterExpiry[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.904] [INFO] Completed: testPasswordResetLinkExpiry | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testPasswordToggle[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001"/>
+  <testcase name="testRememberMe[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.907] [INFO] Completed: testReAuthenticationAfterExpiry | Status: PASSED
+[2026-08-06 11:49:59.907] [INFO] Completed: testPasswordToggle | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testResendOtp[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001"/>
+  <testcase name="testResetPasswordLink[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.909] [INFO] Completed: testResendOtp | Status: PASSED
+[2026-08-06 11:49:59.909] [INFO] Completed: testRememberMe | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testResetWeakPassword[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.002">
+    <system-out><![CDATA[[2026-08-06 11:49:59.912] [INFO] Completed: testResetPasswordLink | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testSqlInjectionInEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.912] [INFO] Completed: testResetWeakPassword | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testSessionPersistence[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.002"/>
+  <testcase name="testSslPinningFailure[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.916] [INFO] Completed: testSqlInjectionInEmail | Status: PASSED
+[2026-08-06 11:49:59.916] [INFO] Completed: testSessionPersistence | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testSuccessfulLogout[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.919] [INFO] Completed: testSslPinningFailure | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testTrimWhitespaceEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.919] [INFO] Completed: testSuccessfulLogout | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testTwoFactorTrigger[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.922] [INFO] Completed: testTrimWhitespaceEmail | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testValidLogin[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:49:59.923] [INFO] Completed: testTwoFactorTrigger | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testUnregisteredEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.004">
+    <system-out><![CDATA[[2026-08-06 11:49:59.925] [INFO] Completed: testValidLogin | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testValidOtpAuthentication[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.925] [INFO] Completed: testUnregisteredEmail | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testXssInEmail[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthenticationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.928] [INFO] Completed: testValidOtpAuthentication | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz001[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.003">
+    <system-out><![CDATA[[2026-08-06 11:49:59.933] [INFO] Completed: testXssInEmail | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz002[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.933] [INFO] Completed: testAuthz001 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz003[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.937] [INFO] Completed: testAuthz002 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz005[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.939] [INFO] Completed: testAuthz003 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz004[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001"/>
+  <testcase name="testAuthz006[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.942] [INFO] Completed: testAuthz005 | Status: PASSED
+[2026-08-06 11:49:59.942] [INFO] Completed: testAuthz004 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz007[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.944] [INFO] Completed: testAuthz006 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz008[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.945] [INFO] Completed: testAuthz007 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz009[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.948] [INFO] Completed: testAuthz008 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz010[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.950] [INFO] Completed: testAuthz009 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz011[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.002">
+    <system-out><![CDATA[[2026-08-06 11:49:59.953] [INFO] Completed: testAuthz010 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz013[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.953] [INFO] Completed: testAuthz011 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz012[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001"/>
+  <testcase name="testAuthz014[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.956] [INFO] Completed: testAuthz013 | Status: PASSED
+[2026-08-06 11:49:59.956] [INFO] Completed: testAuthz012 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz015[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0"/>
+  <testcase name="testAuthz016[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.959] [INFO] Completed: testAuthz014 | Status: PASSED
+[2026-08-06 11:49:59.959] [INFO] Completed: testAuthz015 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz017[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.962] [INFO] Completed: testAuthz016 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz018[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.965] [INFO] Completed: testAuthz017 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz019[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.967] [INFO] Completed: testAuthz018 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz020[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.970] [INFO] Completed: testAuthz019 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz021[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.004">
+    <system-out><![CDATA[[2026-08-06 11:49:59.975] [INFO] Completed: testAuthz020 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz023[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.975] [INFO] Completed: testAuthz021 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz022[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.004">
+    <system-out><![CDATA[[2026-08-06 11:49:59.980] [INFO] Completed: testAuthz023 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz024[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.981] [INFO] Completed: testAuthz022 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz025[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.988] [INFO] Completed: testAuthz024 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz026[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.992] [INFO] Completed: testAuthz025 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz028[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:49:59.998] [INFO] Completed: testAuthz026 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz027[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.007">
+    <system-out><![CDATA[[2026-08-06 11:50:00.007] [INFO] Completed: testAuthz028 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz030[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.008] [INFO] Completed: testAuthz027 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthz029[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.002"/>
+  <testcase name="testProf001[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.020] [INFO] Completed: testAuthz030 | Status: PASSED
+[2026-08-06 11:50:00.021] [INFO] Completed: testAuthz029 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf002[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.025] [INFO] Completed: testProf001 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf003[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0"/>
+  <testcase name="testProf004[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.035] [INFO] Completed: testProf003 | Status: PASSED
+[2026-08-06 11:50:00.034] [INFO] Completed: testProf002 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf005[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001"/>
+  <testcase name="testProf007[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.040] [INFO] Completed: testProf004 | Status: PASSED
+[2026-08-06 11:50:00.040] [INFO] Completed: testProf005 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf006[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001"/>
+  <testcase name="testProf008[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.043] [INFO] Completed: testProf007 | Status: PASSED
+[2026-08-06 11:50:00.043] [INFO] Completed: testProf006 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf009[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.049] [INFO] Completed: testProf008 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf010[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.003">
+    <system-out><![CDATA[[2026-08-06 11:50:00.053] [INFO] Completed: testProf009 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf011[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.054] [INFO] Completed: testProf010 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf012[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.057] [INFO] Completed: testProf011 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf014[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.058] [INFO] Completed: testProf012 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf013[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0"/>
+  <testcase name="testProf015[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.060] [INFO] Completed: testProf013 | Status: PASSED
+[2026-08-06 11:50:00.060] [INFO] Completed: testProf014 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf016[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.064] [INFO] Completed: testProf015 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf017[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.065] [INFO] Completed: testProf016 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf018[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.071] [INFO] Completed: testProf017 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf019[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.072] [INFO] Completed: testProf018 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testProf020[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:50:00.074] [INFO] Completed: testProf019 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg002[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.074] [INFO] Completed: testProf020 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg001[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.006">
+    <system-out><![CDATA[[2026-08-06 11:50:00.078] [INFO] Completed: testReg002 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg003[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.078] [INFO] Completed: testReg001 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg004[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.081] [INFO] Completed: testReg003 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg005[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.085] [INFO] Completed: testReg004 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg006[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.086] [INFO] Completed: testReg005 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg008[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.091] [INFO] Completed: testReg006 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg007[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.095] [INFO] Completed: testReg008 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg009[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001"/>
+  <testcase name="testReg010[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.096] [INFO] Completed: testReg007 | Status: PASSED
+[2026-08-06 11:50:00.096] [INFO] Completed: testReg009 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg012[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.098] [INFO] Completed: testReg010 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg013[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.100] [INFO] Completed: testReg012 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg011[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:50:00.102] [INFO] Completed: testReg013 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg014[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.104] [INFO] Completed: testReg011 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg015[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.105] [INFO] Completed: testReg014 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg016[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.106] [INFO] Completed: testReg015 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg017[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.107] [INFO] Completed: testReg016 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg018[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.108] [INFO] Completed: testReg017 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testReg019[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0"/>
+  <testcase name="testReg020[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.AuthorizationAndProfileTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.111] [INFO] Completed: testReg019 | Status: PASSED
+[2026-08-06 11:50:00.111] [INFO] Completed: testReg018 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testCrudFull[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.002">
+    <system-out><![CDATA[[2026-08-06 11:50:00.121] [INFO] Completed: testReg020 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDash001[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.121] [INFO] Completed: testCrudFull | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDash002[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.123] [INFO] Completed: testDash001 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDash003[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.126] [INFO] Completed: testDash002 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDash004[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.002">
+    <system-out><![CDATA[[2026-08-06 11:50:00.128] [INFO] Completed: testDash003 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDash005[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.129] [INFO] Completed: testDash004 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testDashRest[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.131] [INFO] Completed: testDash005 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav001[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.132] [INFO] Completed: testDashRest | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testFormsFull[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.001"/>
+  <testcase name="testNav002[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.135] [INFO] Completed: testNav001 | Status: PASSED
+[2026-08-06 11:50:00.135] [INFO] Completed: testFormsFull | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav003[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.138] [INFO] Completed: testNav002 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav004[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.142] [INFO] Completed: testNav003 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav005[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.144] [INFO] Completed: testNav004 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav006[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0"/>
+  <testcase name="testNav007[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.146] [INFO] Completed: testNav006 | Status: PASSED
+[2026-08-06 11:50:00.146] [INFO] Completed: testNav005 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav008[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.150] [INFO] Completed: testNav007 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav009[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.151] [INFO] Completed: testNav008 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNav010[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.154] [INFO] Completed: testNav009 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNavRest[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.NavigationAndDashboardTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.154] [INFO] Completed: testNav010 | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testAccessibilitySuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.156] [INFO] Completed: testNavRest | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testErrorHandlingSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.159] [INFO] Completed: testAccessibilitySuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testFileUploadSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.161] [INFO] Completed: testErrorHandlingSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testFiltersSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.163] [INFO] Completed: testFileUploadSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testFullRegressionSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.164] [INFO] Completed: testFiltersSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testInputValidationSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.165] [INFO] Completed: testFullRegressionSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testNotificationsSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.166] [INFO] Completed: testInputValidationSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testOfflineHandlingSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.001">
+    <system-out><![CDATA[[2026-08-06 11:50:00.170] [INFO] Completed: testNotificationsSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testPerformanceSmokeSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.170] [INFO] Completed: testOfflineHandlingSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testResponsiveUiSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.172] [INFO] Completed: testPerformanceSmokeSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.173] [INFO] Completed: testResponsiveUiSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="testSessionManagementSuite[org.testng.TestRunner@1d0a3d74](1)" classname="com.smartfund.tests.SearchFilterValidationTests" time="0.0">
+    <system-out><![CDATA[[2026-08-06 11:50:00.174] [INFO] Completed: testSearchSuite | Status: PASSED
+]]></system-out>
+  </testcase>
+</testsuite>

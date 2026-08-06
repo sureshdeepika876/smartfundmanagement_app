@@ -5,51 +5,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.smartfund</groupId>
-    <artifactId>smartfund-e2e-automation</artifactId>
+    <artifactId>smartfund-web-automation</artifactId>
     <version>1.0.0</version>
-    <name>SmartFund E2E Automation Framework</name>
-    <description>Enterprise Appium and Selenium E2E Automation Suite with Excel &amp; HTML Reporting</description>
+    <name>SmartFund Live Web E2E Automation</name>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <appium.java.client.version>8.5.1</appium.java.client.version>
-        <selenium.version>4.10.0</selenium.version>
+        <selenium.version>4.11.0</selenium.version>
         <testng.version>7.8.0</testng.version>
         <poi.version>5.2.3</poi.version>
-        <jackson.version>2.15.2</jackson.version>
-        <slf4j.version>2.0.7</slf4j.version>
     </properties>
 
     <dependencies>
-        <!-- Appium Java Client -->
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>${appium.java.client.version}</version>
-        </dependency>
-
-        <!-- Selenium Java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-
-        <!-- TestNG -->
-        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
-
-        <!-- Apache POI for Excel Generation -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -60,27 +39,6 @@
             <artifactId>poi-ooxml</artifactId>
             <version>${poi.version}</version>
         </dependency>
-
-        <!-- Jackson Databind for JSON Reporting -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-
-        <!-- Logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-
-        <!-- Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -107,7 +65,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>

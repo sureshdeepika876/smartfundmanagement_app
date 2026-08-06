@@ -1,0 +1,44 @@
+name: Backend Security Review & SAST/DAST Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  security-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+
+      - name: Run Trivy Dependency & Vulnerability Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          ignore-unfixed: true
+          format: 'table'
+          output: 'trivy-report.txt'
+
+      - name: Run Gitleaks Secret Scanner
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Run k6 Load Test Baseline
+        uses: grafana/k6-action@v0.3.0
+        with:
+          filename: 'Vulnerability Test Results/k6-load-test.js'
+        continue-on-error: true
+
+      - name: Upload Security Review & Vulnerability Audit Reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-audit-and-performance-reports
+          path: Vulnerability Test Results/
+          retention-days: 30
