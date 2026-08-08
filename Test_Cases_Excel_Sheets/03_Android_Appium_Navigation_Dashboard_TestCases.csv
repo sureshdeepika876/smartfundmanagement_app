@@ -1,0 +1,91 @@
+"Test Case ID","Module","Sub-Module / Component","Test Case Name / Summary","Pre-requisites","Test Steps","Expected Result","Severity","Execution Mode","Execution Status"
+"APP_TC_NAV_001","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #1 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #1
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_002","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #2 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #2
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_003","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #3 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #3
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_004","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #4 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #4
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_005","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #5 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #5
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_006","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #6 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #6
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_007","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #7 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #7
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_008","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #8 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #8
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_009","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #9 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #9
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_010","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #10 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #10
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_011","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #11 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #11
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_012","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #12 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #12
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_013","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #13 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #13
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_014","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #14 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #14
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_015","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #15 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #15
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_016","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #16 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #16
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_017","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #17 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #17
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_018","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #18 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #18
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_019","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #19 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #19
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_020","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #20 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #20
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_021","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #21 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #21
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_022","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #22 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #22
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_023","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #23 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #23
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_024","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #24 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #24
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_025","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #25 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #25
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_026","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #26 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #26
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_027","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #27 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #27
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_028","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #28 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #28
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_029","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #29 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #29
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_NAV_030","Android Mobile App","Navigation & Dashboard Widgets","Verify dashboard widget & tab navigation scenario #30 (Bottom Navigation, Expense Cards, Analytics Charts)","User logged into Dashboard","1. Open Dashboard Screen
+2. Interact with navigation target #30
+3. Verify UI state transition","Smooth navigation to target screen with complete rendering of widget data","Medium","Appium UiAutomator2 (Android)","PASS"

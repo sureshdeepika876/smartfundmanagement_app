@@ -1,0 +1,121 @@
+"Test Case ID","Module","Sub-Module / Component","Test Case Name / Summary","Pre-requisites","Test Steps","Expected Result","Severity","Execution Mode","Execution Status"
+"APP_TC_SEARCH_001","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #1 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #1
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_002","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #2 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #2
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_003","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #3 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #3
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_004","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #4 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #4
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_005","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #5 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #5
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_006","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #6 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #6
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_007","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #7 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #7
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_008","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #8 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #8
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_009","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #9 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #9
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_010","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #10 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #10
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_011","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #11 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #11
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_012","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #12 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #12
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_013","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #13 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #13
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_014","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #14 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #14
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_015","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #15 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #15
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_016","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #16 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #16
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_017","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #17 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #17
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_018","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #18 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #18
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_019","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #19 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #19
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_020","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #20 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #20
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_021","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #21 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #21
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_022","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #22 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #22
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_023","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #23 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #23
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_024","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #24 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #24
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_025","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #25 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #25
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_026","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #26 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #26
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_027","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #27 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #27
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_028","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #28 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #28
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_029","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #29 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #29
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_030","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #30 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #30
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_031","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #31 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #31
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_032","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #32 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #32
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_033","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #33 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #33
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_034","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #34 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #34
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_035","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #35 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #35
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_036","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #36 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #36
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_037","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #37 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #37
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_038","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #38 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #38
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_039","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #39 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #39
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","Low","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_SEARCH_040","Android Mobile App","Search & Input Validation","Verify expense search query & filter scenario #40 (Date Filtering, Amount Range, Category Filter, Special Characters)","Expenses populated in database","1. Open Expense List Screen
+2. Enter search filter query #40
+3. Apply filter","Filtered expense list matches expected query results without UI lag or crashes","High","Appium UiAutomator2 (Android)","PASS"

@@ -1,0 +1,161 @@
+"Test Case ID","Module","Sub-Module / Component","Test Case Name / Summary","Pre-requisites","Test Steps","Expected Result","Severity","Execution Mode","Execution Status"
+"APP_TC_AUTHZ_001","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #1 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #1
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_002","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #2 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #2
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_003","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #3 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #3
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_004","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #4 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #4
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_005","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #5 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #5
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_006","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #6 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #6
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_007","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #7 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #7
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_008","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #8 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #8
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_009","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #9 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #9
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_010","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #10 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #10
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_011","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #11 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #11
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_012","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #12 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #12
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_013","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #13 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #13
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_014","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #14 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #14
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_015","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #15 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #15
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_016","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #16 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #16
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_017","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #17 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #17
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_018","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #18 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #18
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_019","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #19 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #19
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_020","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #20 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #20
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_021","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #21 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #21
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_022","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #22 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #22
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_023","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #23 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #23
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_024","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #24 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #24
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_025","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #25 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #25
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_026","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #26 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #26
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_027","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #27 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #27
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_028","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #28 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #28
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_029","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #29 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #29
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_030","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #30 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #30
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_031","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #31 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #31
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_032","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #32 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #32
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_033","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #33 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #33
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_034","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #34 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #34
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_035","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #35 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #35
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_036","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #36 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #36
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_037","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #37 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #37
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_038","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #38 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #38
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_039","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #39 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #39
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","Medium","Appium UiAutomator2 (Android)","PASS"
+"APP_TC_AUTHZ_040","Android Mobile App","Authorization & Profile Settings","Verify user profile & role authorization scenario #40 (Profile Edit, Avatar Upload, Password Change, Session Persistence)","User logged into SmartSpend App","1. Navigate to Settings / Profile Screen
+2. Perform action #40
+3. Save changes
+4. Verify backend Firestore update","Profile attributes updated cleanly; unauthorized operations correctly blocked","High","Appium UiAutomator2 (Android)","PASS"
