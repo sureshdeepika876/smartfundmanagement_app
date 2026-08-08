@@ -65,11 +65,8 @@ jobs:
             sleep 8
             curl -s http://127.0.0.1:4723/status || echo "Appium health check complete."
 
-            # Execute E2E Tests inside emulator session
-            if [ -d "automation" ]; then
-              cd automation
-              mvn clean test -Dexecution.mode=appium || true
-            fi
+            # Execute E2E Tests inside emulator session cleanly
+            sh -c "if [ -d automation ]; then cd automation && mvn clean test -Dexecution.mode=appium || true; fi"
 
       # Stage 12 & 13: Capture Screenshots & Logs
       - name: Stage 12 & 13 - Capture Screenshots & Logs
